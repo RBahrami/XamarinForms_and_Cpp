@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="XamarinApp.MainPage">
+
+	<StackLayout>
+		<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+			<Label Text="Xamarin.Forms + C++" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+		</Frame>
+		<StackLayout Padding="10">
+			<Label Text="Operation:" FontSize="Title"/>
+			<RadioButton Padding="5" Content="Add"		GroupName="operation" CheckedChanged="OnOperationRadioButtonCheckedChanged" IsChecked="true"/>
+			<RadioButton Padding="5" Content="Subtract" GroupName="operation" CheckedChanged="OnOperationRadioButtonCheckedChanged" />
+			<RadioButton Padding="5" Content="Multiply" GroupName="operation" CheckedChanged="OnOperationRadioButtonCheckedChanged" />
+			<RadioButton Padding="5" Content="Divide"   GroupName="operation" CheckedChanged="OnOperationRadioButtonCheckedChanged" />
+		</StackLayout>
+		<StackLayout Orientation="Horizontal">
+			<Label Text="Argument A:" FontSize="Title" Padding="10"/>
+			<Entry x:Name="aEnt" Placeholder="First Argument"  WidthRequest="200"/>
+		</StackLayout>
+		<StackLayout Orientation="Horizontal">
+			<Label Text="Argument B:" FontSize="Title" Padding="10"/>
+			<Entry x:Name="bEnt"  Placeholder="Second Argument"  WidthRequest="200"/>
+		</StackLayout>
+		<Button Text="Calculate" Clicked="CalculateBtn_Clicked"/>
+		<StackLayout Orientation="Horizontal">
+			<Label x:Name="resultLbl" Text="Result" FontSize="Medium" Padding="10"/>
+		</StackLayout>
+	</StackLayout>
+
+</ContentPage>
