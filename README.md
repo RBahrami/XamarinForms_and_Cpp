@@ -4,4 +4,4 @@ An example of how to create and use C++ library in C# and Xamarin.Forms (Android
 
 For more information refer to https://rbahrami.github.io/p/xamarin.forms-and-c-
 
-![Screenshot](Screenshots/1.png)
+<img src="Screenshots/1.png" width=40% height=30%>
